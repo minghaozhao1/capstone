@@ -55,6 +55,9 @@ This folder contains the python script for parsing the ke07r7conv. Start the vir
 
 This folder contains the node.js script for saving the result.json to Mongodb. Please change the endpoint of the mongodb database before running. Put the result.json file under the same directory of save_to_mongoDB.js file. 
 
+Before you run the js file, run:  
+`npm install`
+
 ## 4. result
 
 This folder contains the two result.json file generated based on folder1 and folder2 above. 
