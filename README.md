@@ -38,3 +38,23 @@ In this project, an automated process will be implemented to collect data from t
 
 # Goal
 The objective of this project is to utilize computational tools to streamline data processing, making it more accessible and convenient. This will allow for greater flexibility and openness, facilitating the sharing of simulation data with a broader community of researchers.
+
+# Structure
+
+There are four folders in total. Each folder contains different files. 
+
+## 1. KE07-R7-2_Random_Seb 
+
+This folder contains the python script for parsing the KE07-R7-2_Random_Seb. Start the virtaul enviroment installed above and run the KE07-R7-2_Random_Seb.py will generate a result.json file. 
+
+## 2. ke07r7conv
+
+This folder contains the python script for parsing the ke07r7conv. Start the virtaul enviroment installed above and run the ke07r7conv.py will generate a result.json file. 
+
+## 3. node_file
+
+This folder contains the node.js script for saving the result.json to Mongodb. Please change the endpoint of the mongodb database before running. Put the result.json file under the same directory of save_to_mongoDB.js file. 
+
+## 4. result
+
+This folder contains the two result.json file generated based on folder1 and folder2 above. 
