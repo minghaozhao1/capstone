@@ -1,0 +1,3458 @@
+{
+  "I199S": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3965",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3965",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        },
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3965",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3965",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/I199S/I199S1/MD/MDInput_IA199S_rmH_aH_min_rmW.prmtop",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/I199S/I199S1/MD/MDInput_IA199S_rmH_aH_min_rmW.inpcrd",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199S/I199S1/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199S/I199S5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199S/I199S2/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199S/I199S3/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199S/I199S4/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199S/I199S1/MDInput_I199S_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199S/I199S1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "I199S",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFENLRDSGDPVELGKFYSEIGIDELSFWDITASVEKRKTMLELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAKRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVLGSIDRLGTKSGYDTEMIRFVRPLTTLPISAXRGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "K132N": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3965",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        },
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3965",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3965",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3965",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/K132N/K132N1/MD/MDInput_KA132N_rmH_aH_min_rmW.prmtop",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/K132N/K132N1/MD/MDInput_KA132N_rmH_aH_min_rmW.inpcrd",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K132N/K132N4/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K132N/K132N3/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K132N/K132N1/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K132N/K132N2/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K132N/K132N5/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K132N/K132N1/MDInput_K132N_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K132N/K132N1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "K132N",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFENLRDSGDPVELGKFYSEIGIDELSFWDITASVEKRKTMLELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAANRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVLGSIDRLGTKSGYDTEMIRFVRPLTTLPIIAXRGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "K162A": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3961",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3961",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3961",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        },
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3961",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/K162A/K162A1/MD/MDInput_KA162A_rmH_aH_min_rmW.inpcrd",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/K162A/K162A1/MD/MDInput_KA162A_rmH_aH_min_rmW.prmtop",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K162A/K162A4/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K162A/K162A3/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K162A/K162A2/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K162A/K162A5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K162A/K162A1/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K162A/K162A1/MDInput_K162A_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K162A/K162A1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "K162A",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFENLRDSGDPVELGKFYSEIGIDELSFWDITASVEKRKTMLELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAKRVDGEFMVFTYSGTKNTGILLRDWVVEVEARGAGEIVLGSIDRLGTKSGYDTEMIRFVRPLTTLPIIAXRGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "R16Q": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3966",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        },
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3966",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3966",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3966",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/R16Q/R16Q1/MD/MDInput_RA16Q_rmH_aH_min_rmW.inpcrd",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/R16Q/R16Q1/MD/MDInput_RA16Q_rmH_aH_min_rmW.prmtop",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/R16Q/R16Q1/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/R16Q/R16Q5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/R16Q/R16Q2/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/R16Q/R16Q3/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/R16Q/R16Q4/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/R16Q/R16Q1/MDInput_R16Q_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/R16Q/R16Q1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "R16Q",
+    "sequence": "MLAKRIDAALIMKDGQVVKGSNFENLRDSGDPVELGKFYSEIGIDELSFWDITASVEKRKTMLELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAKRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVLGSIDRLGTKSGYDTEMIRFVRPLTTLPIIAXRGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "WT": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3973",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3973",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3973",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3973",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/WT/WT1/MD/MDInput_WT_rmH_aH_min_rmW.prmtop",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/WT/WT1/MD/MDInput_WT_rmH_aH_min_rmW.inpcrd",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/WT/WT1/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/WT/WT2/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/WT/WT5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/WT/WT4/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/WT/WT3/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/WT/WT1/MDInput_WT_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/WT/WT1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "WT",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFENLRDSGDPVELGKFYSEIGIDELSFWDITASVEKRKTMLELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAKRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVLGSIDRLGTKSGYDTEMIRFVRPLTTLPIIAXRGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "S48N": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3976",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        },
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3976",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3976",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3976",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/S48N/S48N1/MD/MDInput_SA48N_rmH_aH_min_rmW.inpcrd",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/S48N/S48N1/MD/MDInput_SA48N_rmH_aH_min_rmW.prmtop",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/S48N/S48N1/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/S48N/S48N2/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/S48N/S48N5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/S48N/S48N4/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/S48N/S48N3/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/S48N/S48N1/MDInput_S48N_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/S48N/S48N1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "S48N",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFENLRDSGDPVELGKFYSEIGIDELNFWDITASVEKRKTMLELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAKRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVLGSIDRLGTKSGYDTEMIRFVRPLTTLPIIAXRGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "K132M": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3968",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        },
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3968",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3968",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3968",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/K132M/K132M1/MD/MDInput_KA132M_rmH_aH_min_rmW.inpcrd",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/K132M/K132M1/MD/MDInput_KA132M_rmH_aH_min_rmW.prmtop",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K132M/K132M5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K132M/K132M2/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K132M/K132M1/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K132M/K132M3/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K132M/K132M4/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K132M/K132M1/MDInput_K132M_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K132M/K132M1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "K132M",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFENLRDSGDPVELGKFYSEIGIDELSFWDITASVEKRKTMLELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAMRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVLGSIDRLGTKSGYDTEMIRFVRPLTTLPIIAXRGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "L52A": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3964",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3964",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3964",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        },
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3964",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/L52A/L52A1/MD/MDInput_LA52A_rmH_aH_min_rmW.prmtop",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/L52A/L52A1/MD/MDInput_LA52A_rmH_aH_min_rmW.inpcrd",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/L52A/L52A2/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/L52A/L52A5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/L52A/L52A1/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/L52A/L52A4/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/L52A/L52A3/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/L52A/L52A1/MDInput_L52A_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/L52A/L52A1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "L52A",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFENLRDSGDPVELGKFYSEIGIDELSFWDATASVEKRKTMLELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAKRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVLGSIDRLGTKSGYDTEMIRFVRPLTTLPIIAXRGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "L170A": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3964",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3964",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3964",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        },
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3964",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/L170A/L170A1/MD/MDInput_LA170A_rmH_aH_min_rmW.prmtop",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/L170A/L170A1/MD/MDInput_LA170A_rmH_aH_min_rmW.inpcrd",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/L170A/L170A1/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/L170A/L170A5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/L170A/L170A2/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/L170A/L170A3/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/L170A/L170A4/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/L170A/L170A1/MDInput_L170A_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/L170A/L170A1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "L170A",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFENLRDSGDPVELGKFYSEIGIDELSFWDITASVEKRKTMLELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAKRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVAGSIDRLGTKSGYDTEMIRFVRPLTTLPIIAXRGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "I199A": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3964",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        },
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3964",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3964",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3964",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/I199A/I199A1/MD/MDInput_IA199A_rmH_aH_min_rmW.inpcrd",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/I199A/I199A1/MD/MDInput_IA199A_rmH_aH_min_rmW.prmtop",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199A/I199A2/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199A/I199A5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199A/I199A1/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199A/I199A4/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199A/I199A3/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199A/I199A1/MDInput_I199A_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199A/I199A1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "I199A",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFENLRDSGDPVELGKFYSEIGIDELSFWDITASVEKRKTMLELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAKRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVLGSIDRLGTKSGYDTEMIRFVRPLTTLPIAAXRGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "H201K": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3978",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3978",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3978",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3978",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/H201K/H201K1/MD/MDInput_HA201K_rmH_aH_min_rmW.prmtop",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/H201K/H201K1/MD/MDInput_HA201K_rmH_aH_min_rmW.inpcrd",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H201K/H201K2/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H201K/H201K5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H201K/H201K1/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H201K/H201K4/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H201K/H201K3/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H201K/H201K1/MDInput_H201K_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H201K/H201K1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "H201K",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFENLRDSGDPVELGKFYSEIGIDELSFWDITASVEKRKTMLELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAKRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVLGSIDRLGTKSGYDTEMIRFVRPLTTLPIIAKRGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "I199F": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3974",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3974",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3974",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3974",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/I199F/I199F1/MD/MDInput_IA199F_rmH_aH_min_rmW.prmtop",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/I199F/I199F1/MD/MDInput_IA199F_rmH_aH_min_rmW.inpcrd",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199F/I199F3/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199F/I199F4/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199F/I199F1/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199F/I199F5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199F/I199F2/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199F/I199F1/MDInput_I199F_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/I199F/I199F1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "I199F",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFENLRDSGDPVELGKFYSEIGIDELSFWDITASVEKRKTMLELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAKRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVLGSIDRLGTKSGYDTEMIRFVRPLTTLPIFAXRGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "H201A": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3966",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3966",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3966",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3966",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/H201A/H201A1/MD/MDInput_HA201A_rmH_aH_min_rmW.inpcrd",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/H201A/H201A1/MD/MDInput_HA201A_rmH_aH_min_rmW.prmtop",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H201A/H201A4/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H201A/H201A3/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H201A/H201A2/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H201A/H201A5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H201A/H201A1/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H201A/H201A1/MDInput_H201A_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H201A/H201A1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "H201A",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFENLRDSGDPVELGKFYSEIGIDELSFWDITASVEKRKTMLELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAKRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVLGSIDRLGTKSGYDTEMIRFVRPLTTLPIIAARGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "H84Y": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3977",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        },
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3977",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3977",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3977",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/H84Y/H84Y1/MD/MDInput_HA84Y_rmH_aH_min_rmW.prmtop",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/H84Y/H84Y1/MD/MDInput_HA84Y_rmH_aH_min_rmW.inpcrd",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H84Y/H84Y3/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H84Y/H84Y4/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H84Y/H84Y1/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H84Y/H84Y5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H84Y/H84Y2/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H84Y/H84Y1/MDInput_H84Y_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/H84Y/H84Y1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "H84Y",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFENLRDSGDPVELGKFYSEIGIDELSFWDITASVEKRKTMLELVEKVAEQIDIPITVGGGIYDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAKRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVLGSIDRLGTKSGYDTEMIRFVRPLTTLPIIAXRGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "N25S": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3970",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3970",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3970",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3970",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/N25S/N25S1/MD/MDInput_NA25S_rmH_aH_min_rmW.prmtop",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/N25S/N25S1/MD/MDInput_NA25S_rmH_aH_min_rmW.inpcrd",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/N25S/N25S1/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/N25S/N25S2/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/N25S/N25S5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/N25S/N25S4/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/N25S/N25S3/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/N25S/N25S1/MDInput_N25S_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/N25S/N25S1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "N25S",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFESLRDSGDPVELGKFYSEIGIDELSFWDITASVEKRKTMLELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAKRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVLGSIDRLGTKSGYDTEMIRFVRPLTTLPIIAXRGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "K222A": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3958",
+              "r1": "1.00",
+              "r2": "1.10",
+              "r3": "2.93",
+              "r4": "4.00",
+              "rk2": "0.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3958",
+              "r1": "1.00",
+              "r2": "1.10",
+              "r3": "2.93",
+              "r4": "4.00",
+              "rk2": "0.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3958",
+              "r1": "1.00",
+              "r2": "1.10",
+              "r3": "2.93",
+              "r4": "4.00",
+              "rk2": "0.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3958",
+              "r1": "1.00",
+              "r2": "1.10",
+              "r3": "2.93",
+              "r4": "4.00",
+              "rk2": "0.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/K222A/K222A1/MD/MDInput_KA222A_rmH_aH_min_rmW.inpcrd",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/K222A/K222A1/MD/MDInput_KA222A_rmH_aH_min_rmW.prmtop",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K222A/K222A5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K222A/K222A2/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K222A/K222A1/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K222A/K222A3/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K222A/K222A4/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K222A/K222A1/MDInput_K222A_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/K222A/K222A1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "K222A",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFENLRDSGDPVELGKFYSEIGIDELSFWDITASVEKRKTMLELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAKRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVLGSIDRLGTKSGYDTEMIRFVRPLTTLPIIAXRGAGKMEXFLEAFLAGADAAAADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "E185A": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3968",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        },
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3968",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3968",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3968",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/E185A/E185A1/MD/MDInput_EA185A_rmH_aH_min_rmW.prmtop",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/E185A/E185A1/MD/MDInput_EA185A_rmH_aH_min_rmW.inpcrd",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/E185A/E185A1/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/E185A/E185A2/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/E185A/E185A5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/E185A/E185A4/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/E185A/E185A3/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/E185A/E185A1/MDInput_E185A_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/E185A/E185A1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "E185A",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFENLRDSGDPVELGKFYSEIGIDELSFWDITASVEKRKTMLELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAKRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVLGSIDRLGTKSGYDTAMIRFVRPLTTLPIIAXRGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  },
+  "M62A": {
+    "md-conig": {
+      "runtime-config": [
+        {
+          "heat.in": {
+            "imin": "0",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "nstlim": "20000",
+            "dt": "0.002",
+            "tempi": "0.0",
+            "temp0": "293.15",
+            "ntpr": "200",
+            "ntwx": "20000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "1",
+            "ntp": "0",
+            "iwrap": "1",
+            "nmropt": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3966",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            },
+            "temp_control": [
+              {
+                "type": "'TEMP0'",
+                "istep1": "0",
+                "istep2": "18000",
+                "value1": "0.0",
+                "value2": "293.15"
+              },
+              {
+                "type": "'TEMP0'",
+                "istep1": "18001",
+                "istep2": "20000",
+                "value1": "293.15",
+                "value2": "293.15"
+              }
+            ]
+          }
+        },
+        {
+          "prod.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "55000000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "55000",
+            "ntwx": "50000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3966",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "min.in": {
+            "imin": "1",
+            "ntx": "1",
+            "irest": "0",
+            "ntc": "2",
+            "ntf": "2",
+            "cut": "10.0",
+            "maxcyc": "20000",
+            "ncyc": "10000",
+            "ntpr": "200",
+            "ntwx": "0",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3966",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        },
+        {
+          "equi.in": {
+            "imin": "0",
+            "ntx": "5",
+            "irest": "1",
+            "ntf": "2",
+            "ntc": "2",
+            "nstlim": "500000",
+            "dt": "0.002",
+            "cut": "10.0",
+            "temp0": "293.15",
+            "ntpr": "1000",
+            "ntwx": "5000",
+            "ntt": "3",
+            "gamma_ln": "5.0",
+            "ntb": "2",
+            "ntp": "1",
+            "iwrap": "1",
+            "ig": "-1",
+            "ntr": "1",
+            "restraint_wt": "2.0",
+            "restraintmask": "'@C,CA,N'",
+            "nmropt": "1",
+            "type": "'END'",
+            "DISANG": {
+              "iat": "3966",
+              "r1": "1.00",
+              "r2": "2.00",
+              "r3": "4.00",
+              "r4": "5.00",
+              "rk2": "100.0",
+              "rk3": "100.0",
+              "ir6": "1",
+              "ialtd": "0"
+            }
+          }
+        }
+      ],
+      "md-configuration": [
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/M62A/M62A1/MD/MDInput_MA62A_rmH_aH_min_rmW.inpcrd",
+        "/data1/jiany37/KE07-R7-2_Conv_Seb/M62A/M62A1/MD/MDInput_MA62A_rmH_aH_min_rmW.prmtop",
+        {
+          "issolvated": true,
+          "solvatebox": ["Oct", "TIP3PBOX", "10"],
+          "mdparameter": ["protein.ff14SB", "gaff", "water.tip3p"]
+        }
+      ]
+    },
+    "traj": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/M62A/M62A1/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/M62A/M62A2/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/M62A/M62A5/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/M62A/M62A4/MD/prod.nc",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/M62A/M62A3/MD/prod.nc"
+    ],
+    "structure": [
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/M62A/M62A1/MDInput_M62A_rmH_aH_min_rmW.pdb",
+      "/data1/jiany37/KE07-R7-2_Conv_Seb/M62A/M62A1.py"
+    ],
+    "ligand": {
+      "smiles": "c1cc2c(cc1N(=O)=O)cno2",
+      "cif": "file-in-future",
+      "binding": "precomplex",
+      "binding_method": [
+        "reference_SI",
+        "https://www.nature.com/articles/nature06879"
+      ]
+    },
+    "mutation": "M62A",
+    "sequence": "MLAKRIDAALIMKDGRVVKGSNFENLRDSGDPVELGKFYSEIGIDELSFWDITASVEKRKTALELVEKVAEQIDIPITVGGGIXDFETASELILRGADKVEFNTAAVENPSLITQIAQTFGSQAVVVYIAAKRVDGEFMVFTYSGTKNTGILLRDWVVEVEKRGAGEIVLGSIDRLGTKSGYDTEMIRFVRPLTTLPIIAXRGAGKMEXFLEAFLAGADAAKADSVFXSREIDVRELKEYLKKXGVNVRLEGL"
+  }
+}
