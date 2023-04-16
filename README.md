@@ -17,11 +17,11 @@ follow instruction on https://pypi.org/project/nodeenv/ to install nodeenv
 
 3. install nvm 
 
-`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash`
-`chmod +x ~/.nvm/nvm.sh`
-`source ~/.bashrc`
-`nvm install 16`
-(if it alerts you about unsetting config, please follow to do so)
-after unset
-`nvm use 16`
-now you have node and npm successfully installed in this virtual enviroment. 
+`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash`  
+`chmod +x ~/.nvm/nvm.sh`   
+`source ~/.bashrc`  
+`nvm install 16`  
+(if it alerts you about unsetting config, please follow to do so)  
+after unset  
+`nvm use 16`  
+now you have node and npm successfully installed in this virtual enviroment.   
